@@ -1,0 +1,25 @@
+Consulta com JDBC
+Exitem 3 interfaces para montar comandos SQL:
+    > Statement - Executar SQL comuns 
+    > PreparedStatement - Executar SQL parametrizáveis
+        -> previne SQL Injection
+        -> Melhora legibilidade
+        -> Melhora desempenho
+
+    > CallableStatement - Executar stored procedures
+
+Exestem 3 métodos para executar comandos SQL: 
+    > execute - Pode executar qualquer tipo de SQL
+    > executeQuery - Usado para executar "SELECT"
+    > executeUpdate - Usado para commandos de alteração de 
+    banco de dados (INSERT, UPDATE, DELETE, CREATE, ALTER)
+
+ResultSet - objeto que ccontem os dados de uma determinada 
+Consulta no banco de dados (normalmente com SELECT)
+
+São utilizados os métodos getters para buscar dados do ResultSet.
+Tais como: getters, getFloat e getString.
+
+O método next() é utilizado para percorrer os registro do 
+ResultSet. (Normalmente utilizado junto ccom while)
+
